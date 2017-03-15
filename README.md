@@ -5,6 +5,7 @@ SOURCES:
 * Quora
 * Springboard
 * Wikipedia
+* Cross Validates
 
 
 ## Q1- What’s the trade-off between bias and variance?
