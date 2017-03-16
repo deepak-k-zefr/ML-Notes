@@ -80,6 +80,13 @@ It has also been suggested that using the Shapley value, a game theory tool, the
 [What does the hidden layer in a neural network compute?](http://stats.stackexchange.com/questions/63152/what-does-the-hidden-layer-in-a-neural-network-compute?rq=1)
 
 
+[What does O(log n) mean exactly?](http://stackoverflow.com/questions/2307283/what-does-olog-n-mean-exactly?noredirect=1&lq=1)
+
+[Complexity of Python Operations](https://www.ics.uci.edu/~pattis/ICS-33/lectures/complexitypython.txt)
+[Wiki - Complexity of Python Operations](https://wiki.python.org/moin/TimeComplexity)
+
+
+
 
 ## From Quora
 
