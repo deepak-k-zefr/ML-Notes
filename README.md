@@ -74,11 +74,11 @@ The ROC curve is a graphical representation of the contrast between true positiv
 ##  Define precision and recall.
 More Reading: [precision and recall-Scikit Learn](http://scikit-learn.org/stable/auto_examples/model_selection/plot_precision_recall.html)
 
-
-P = (T_p)/(T_p+F_p)
-Recall (R) is defined as the number of true positives (T_p) over the number of true positives plus the number of false negatives (F_n).
-R = (T_p)/(T_p+F_n)
-These quantities are also related to the (F_1) score, which is defined as the harmonic mean of precision and recall.
+Precision (P) is defined as the number of true positives (T_{p}) over the number of true positives plus the number of false positives (F_{p}).
+P = \frac{(T_{p})}{(T_{p}+F_{p})}
+Recall (R) is defined as the number of true positives (T_{p}) over the number of true positives plus the number of false negatives (F_n).
+R = (T_{p})/(T_{p}+F_{n})
+These quantities are also related to the (F_{1}) score, which is defined as the harmonic mean of precision and recall.
 F1 = 2\frac{P times R}{P+R}
 
 ## What is Bayes’ Theorem? How is it useful in a machine learning context?
