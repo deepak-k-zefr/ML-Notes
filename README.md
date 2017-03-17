@@ -17,11 +17,9 @@ SOURCES:
 * No auto-correlation
 * Homoscedasticity
 
-More reading: http://r-statistics.co/Assumptions-of-Linear-Regression.html
-
-More reading: http://www.statisticssolutions.com/assumptions-of-linear-regression/
-
-More reading: http://www.nitiphong.com/paper_pdf/OLS_Assumptions.pdf
+More reading : http://r-statistics.co/Assumptions-of-Linear-Regression.html.   
+More reading : http://www.statisticssolutions.com/assumptions-of-linear-regression/.  
+More reading : http://www.nitiphong.com/paper_pdf/OLS_Assumptions.pdf.  
 
 
 ## Logistic Regression
@@ -46,7 +44,7 @@ There is no  assumption on data, errors or targets. In theory a Neural Network c
 
 ##  What’s the trade-off between bias and variance?
 
-More reading: Bias-Variance Tradeoff (Wikipedia)
+More reading : Bias-Variance Tradeoff (Wikipedia)
 
 Bias is error due to erroneous or overly simplistic assumptions in the learning algorithm you’re using. This can lead to the model underfitting your data, making it hard for it to have high predictive accuracy and for you to generalize your knowledge from the training set to the test set.
 
@@ -58,7 +56,7 @@ The bias-variance decomposition essentially decomposes the learning error from a
 
 ##  How is KNN different from k-means clustering?
 
-More reading: How is the k-nearest neighbor algorithm different from k-means clustering? (Quora)
+More reading : How is the k-nearest neighbor algorithm different from k-means clustering? (Quora)
 
 K-Nearest Neighbors is a supervised classification algorithm, while k-means clustering is an unsupervised clustering algorithm. While the mechanisms may seem similar at first, what this really means is that in order for K-Nearest Neighbors to work, you need labeled data you want to classify an unlabeled point into (thus the nearest neighbor part). K-means clustering requires only a set of unlabeled points and a threshold: the algorithm will take unlabeled points and gradually learn how to cluster them into groups by computing the mean of the distance between different points.
 
@@ -85,7 +83,7 @@ F1 = 2\frac{P times R}{P+R}
 
 ## What is Bayes’ Theorem? How is it useful in a machine learning context?
 
-[More reading: An Intuitive (and Short) Explanation of Bayes’ Theorem (BetterExplained)][(https://betterexplained.com/articles/an-intuitive-and-short-explanation-of-bayes-theorem/)
+[More reading: An Intuitive (and Short) Explanation of Bayes’ Theorem (BetterExplained)](https://betterexplained.com/articles/an-intuitive-and-short-explanation-of-bayes-theorem/)
 
 Bayes’ Theorem gives you the posterior probability of an event given what is known as prior knowledge.
 
@@ -113,6 +111,8 @@ It has also been suggested that using the Shapley value, a game theory tool, the
 [Is there a standard and accepted method for selecting the number of layers, and the number of nodes in each layer, in a feed-forward neural network? I'm interested in automated ways of building neural networks.](http://stats.stackexchange.com/questions/181/how-to-choose-the-number-of-hidden-layers-and-nodes-in-a-feedforward-neural-netw).  
 [What does the hidden layer in a neural network compute?](http://stats.stackexchange.com/questions/63152/what-does-the-hidden-layer-in-a-neural-network-compute?rq=1).  
 [What does O(log n) mean exactly?](http://stackoverflow.com/questions/2307283/what-does-olog-n-mean-exactly?noredirect=1&lq=1).  
+
+## Other Sources
 [Complexity of Python Operations](https://www.ics.uci.edu/~pattis/ICS-33/lectures/complexitypython.txt).  
 [Wiki - Complexity of Python Operations](https://wiki.python.org/moin/TimeComplexity).  
 
