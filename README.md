@@ -124,7 +124,7 @@ It has also been suggested that using the Shapley value, a game theory tool, the
 [What's the difference between gradient descent and stochastic gradient descent?](https://www.quora.com/Whats-the-difference-between-gradient-descent-and-stochastic-gradient-descent/answer/Sebastian-Raschka-1?srid=9yUC) . 
 
 ## From Quora
-[When should we use logistic regression and Neural Network?](https://www.quora.com/When-should-we-use-logistic-regression-and-Neural-Network/answer/Sebastian-Raschka-1?srid=9yUC) . 
+[When should we use logistic regression and Neural Network?](https://www.quora.com/When-should-we-use-logistic-regression-and-Neural-Network/answer/Sebastian-Raschka-1?srid=9yUC).   
 [What are Kernels in Machine Learning and SVM?](https://www.quora.com/What-are-Kernels-in-Machine-Learning-and-SVM)
-[Supervised Learning Topic FAQ](https://www.quora.com/topic/Supervised-Learning/faq) . 
-[What are the advantages of logistic regression over decision trees?](https://www.quora.com/What-are-the-advantages-of-logistic-regression-over-decision-trees) . 
+[Supervised Learning Topic FAQ](https://www.quora.com/topic/Supervised-Learning/faq).   
+[What are the advantages of logistic regression over decision trees?](https://www.quora.com/What-are-the-advantages-of-logistic-regression-over-decision-trees).   
