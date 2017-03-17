@@ -111,17 +111,17 @@ It has also been suggested that using the Shapley value, a game theory tool, the
 ## From Cross Validated
 [What is the difference between “likelihood” and “probability”?](https://stats.stackexchange.com/questions/2641/what-is-the-difference-between-likelihood-and-probability).  
 [Is there a standard and accepted method for selecting the number of layers, and the number of nodes in each layer, in a feed-forward neural network? I'm interested in automated ways of building neural networks.](http://stats.stackexchange.com/questions/181/how-to-choose-the-number-of-hidden-layers-and-nodes-in-a-feedforward-neural-netw).  
-
 [What does the hidden layer in a neural network compute?](http://stats.stackexchange.com/questions/63152/what-does-the-hidden-layer-in-a-neural-network-compute?rq=1).  
-
 [What does O(log n) mean exactly?](http://stackoverflow.com/questions/2307283/what-does-olog-n-mean-exactly?noredirect=1&lq=1).  
-
 [Complexity of Python Operations](https://www.ics.uci.edu/~pattis/ICS-33/lectures/complexitypython.txt).  
 [Wiki - Complexity of Python Operations](https://wiki.python.org/moin/TimeComplexity).  
 
 ## Sebastian Raschka
 [What-is-the-role-of-the-activation-function-in-a-neural-network](https://www.quora.com/What-is-the-role-of-the-activation-function-in-a-neural-network).     
-[What's the difference between gradient descent and stochastic gradient descent?](https://www.quora.com/Whats-the-difference-between-gradient-descent-and-stochastic-gradient-descent/answer/Sebastian-Raschka-1?srid=9yUC) . 
+[What's the difference between gradient descent and stochastic gradient descent?](https://www.quora.com/Whats-the-difference-between-gradient-descent-and-stochastic-gradient-descent/answer/Sebastian-Raschka-1?srid=9yUC).   
+[How do I select SVM kernels?](https://www.quora.com/How-do-I-select-SVM-kernels/answer/Sebastian-Raschka-1?srid=9yUC).   
+[What is the best visual explanation for the back propagation algorithm for neural networks?](https://www.quora.com/What-is-the-best-visual-explanation-for-the-back-propagation-algorithm-for-neural-networks/answer/Sebastian-Raschka-1?srid=9yUC).  
+[How do I debug an artificial neural network algorithm?](https://www.quora.com/How-do-I-debug-an-artificial-neural-network-algorithm/answer/Sebastian-Raschka-1?srid=9yUC)
 
 ## From Quora
 [When should we use logistic regression and Neural Network?](https://www.quora.com/When-should-we-use-logistic-regression-and-Neural-Network/answer/Sebastian-Raschka-1?srid=9yUC).   
