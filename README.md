@@ -9,31 +9,25 @@ SOURCES:
 
 ## Assumptions of Ordinary Least Squares Regression
 
-Linear relationship
-
-Multivariate normality
-
-No or little multicollinearity
-
-No auto-correlation
-
-Homoscedasticity
+* Linear relationship
+* Multivariate normality
+* No or little multicollinearity
+* No auto-correlation
+* Homoscedasticity
 
 More reading: http://r-statistics.co/Assumptions-of-Linear-Regression.html
-
 More reading: http://www.statisticssolutions.com/assumptions-of-linear-regression/
-
 More reading: http://www.nitiphong.com/paper_pdf/OLS_Assumptions.pdf
 
 
 ## Assumptions of Logistic Regression
-Because logistic regression uses MLE rather than OLS, it avoids many
+* Because logistic regression uses MLE rather than OLS, it avoids many
 of the typical assumptions tested in statistical analysis.
-Does not assume normality of variables (both DV and IVs).
-Does not assume linearity between DV and IVs.
-Does not assume homoscedasticity.
-Does not assume normal errors.
-MLE allows more flexibility in the data and analysis because it has
+* Does not assume normality of variables (both DV and IVs).
+* Does not assume linearity between DV and IVs.
+* Does not assume homoscedasticity.
+* Does not assume normal errors.
+* MLE allows more flexibility in the data and analysis because it has
 fewer restrictions.
 
 ##  What’s the trade-off between bias and variance?
