@@ -136,3 +136,6 @@ It has also been suggested that using the Shapley value, a game theory tool, the
 [What are Kernels in Machine Learning and SVM?](https://www.quora.com/What-are-Kernels-in-Machine-Learning-and-SVM)
 [Supervised Learning Topic FAQ](https://www.quora.com/topic/Supervised-Learning/faq).   
 [What are the advantages of logistic regression over decision trees?](https://www.quora.com/What-are-the-advantages-of-logistic-regression-over-decision-trees).   
+
+\frac{n!}{k!(n-k)!}
+
