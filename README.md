@@ -8,14 +8,21 @@ SOURCES:
 * Cross Validates
 
 ## Assumptions of Ordinary Least Squares Regression
-More reading:
+
 Linear relationship
+
 Multivariate normality
+
 No or little multicollinearity
+
 No auto-correlation
+
 Homoscedasticity
+
 More reading: http://r-statistics.co/Assumptions-of-Linear-Regression.html
+
 More reading: http://www.statisticssolutions.com/assumptions-of-linear-regression/
+
 More reading: http://www.nitiphong.com/paper_pdf/OLS_Assumptions.pdf
 
 
