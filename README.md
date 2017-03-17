@@ -7,8 +7,29 @@ SOURCES:
 * Wikipedia
 * Cross Validates
 
+## Assumptions of Ordinary Least Squares Regression
+More reading:
+Linear relationship
+Multivariate normality
+No or little multicollinearity
+No auto-correlation
+Homoscedasticity
+More reading: http://r-statistics.co/Assumptions-of-Linear-Regression.html
+More reading: http://www.statisticssolutions.com/assumptions-of-linear-regression/
+More reading: http://www.nitiphong.com/paper_pdf/OLS_Assumptions.pdf
 
-## Q1- What’s the trade-off between bias and variance?
+
+## Assumptions of Logistic Regression
+Because logistic regression uses MLE rather than OLS, it avoids many
+of the typical assumptions tested in statistical analysis.
+Does not assume normality of variables (both DV and IVs).
+Does not assume linearity between DV and IVs.
+Does not assume homoscedasticity.
+Does not assume normal errors.
+MLE allows more flexibility in the data and analysis because it has
+fewer restrictions.
+
+##  What’s the trade-off between bias and variance?
 
 More reading: Bias-Variance Tradeoff (Wikipedia)
 
@@ -20,7 +41,7 @@ The bias-variance decomposition essentially decomposes the learning error from a
 
 
 
-## Q2 How is KNN different from k-means clustering?
+##  How is KNN different from k-means clustering?
 
 More reading: How is the k-nearest neighbor algorithm different from k-means clustering? (Quora)
 
@@ -30,14 +51,14 @@ The critical difference here is that KNN needs labeled points and is thus superv
 
 
 
-## Q3 Explain how a ROC curve works.
+##  Explain how a ROC curve works.
 
 More reading: Receiver operating characteristic (Wikipedia)
 
 The ROC curve is a graphical representation of the contrast between true positive rates and the false positive rate at various thresholds. It’s often used as a proxy for the trade-off between the sensitivity of the model (true positives) vs the fall-out or the probability it will trigger a false alarm (false positives).
 
 
-## Q4 Define precision and recall.
+##  Define precision and recall.
 More Reading: [precision and recall-Scikit Learn](http://scikit-learn.org/stable/auto_examples/model_selection/plot_precision_recall.html)
 
 
