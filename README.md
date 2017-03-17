@@ -24,10 +24,10 @@ More reading: http://www.nitiphong.com/paper_pdf/OLS_Assumptions.pdf
 
 ## Assumptions of Logistic Regression
 
-• No outliers.(Use z-scores, histograms, and k-means clustering, to identify and remove outliers
+* No outliers.(Use z-scores, histograms, and k-means clustering, to identify and remove outliers
 and analyze residuals to identify outliers in the regression)
-• Independent errors.(Like OLS, error terms are assumed uncorrelated.)
-• No multicollinearity.(Check zero-order correlation matrix for high values (ie r>0.7)
+* Independent errors.(Like OLS, error terms are assumed uncorrelated.)
+* No multicollinearity.(Check zero-order correlation matrix for high values (ie r>0.7)
 
 More Reading :https://onlinecourses.science.psu.edu/stat504/node/164
 
