@@ -16,12 +16,22 @@ SOURCES:
 * Homoscedasticity
 
 More reading: http://r-statistics.co/Assumptions-of-Linear-Regression.html
+
 More reading: http://www.statisticssolutions.com/assumptions-of-linear-regression/
+
 More reading: http://www.nitiphong.com/paper_pdf/OLS_Assumptions.pdf
 
 
 ## Assumptions of Logistic Regression
-* Because logistic regression uses MLE rather than OLS, it avoids many
+
+• No outliers.(Use z-scores, histograms, and k-means clustering, to identify and remove outliers
+and analyze residuals to identify outliers in the regression)
+• Independent errors.(Like OLS, error terms are assumed uncorrelated.)
+• No multicollinearity.(Check zero-order correlation matrix for high values (ie r>0.7)
+
+More Reading :https://onlinecourses.science.psu.edu/stat504/node/164
+
+ Because logistic regression uses MLE rather than OLS, it avoids many
 of the typical assumptions tested in statistical analysis.
 * Does not assume normality of variables (both DV and IVs).
 * Does not assume linearity between DV and IVs.
