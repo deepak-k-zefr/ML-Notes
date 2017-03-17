@@ -7,7 +7,9 @@ SOURCES:
 * Wikipedia
 * Cross Validates
 
-## Assumptions of Ordinary Least Squares Regression
+# Assumptions of Various Models
+
+## Linear Regression
 
 * Linear relationship
 * Multivariate normality
@@ -22,8 +24,7 @@ More reading: http://www.statisticssolutions.com/assumptions-of-linear-regressio
 More reading: http://www.nitiphong.com/paper_pdf/OLS_Assumptions.pdf
 
 
-## Assumptions of Logistic Regression
-
+## Logistic Regression
 * No outliers.(Use z-scores, histograms, and k-means clustering, to identify and remove outliers
 and analyze residuals to identify outliers in the regression)
 * Independent errors.(Like OLS, error terms are assumed uncorrelated.)
@@ -39,6 +40,9 @@ of the typical assumptions tested in statistical analysis.
 * Does not assume normal errors.
 * MLE allows more flexibility in the data and analysis because it has
 fewer restrictions.
+
+## Neural Networks
+There is no  assumption on data, errors or targets. In theory a Neural Network can approximate any function and this is done without assumptions, it only depends on data and network configuration.
 
 ##  What’s the trade-off between bias and variance?
 
