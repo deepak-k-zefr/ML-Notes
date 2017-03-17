@@ -119,7 +119,13 @@ It has also been suggested that using the Shapley value, a game theory tool, the
 [How to choose the number of hidden layers and nodes in a feedforward neural network?](http://stats.stackexchange.com/questions/181/how-to-choose-the-number-of-hidden-layers-and-nodes-in-a-feedforward-neural-netw).  
 [Explaining to laypeople why bootstrapping works](http://stats.stackexchange.com/questions/26088/explaining-to-laypeople-why-bootstrapping-works).  
 [Can someone help to explain the difference between independent and random?](http://stats.stackexchange.com/questions/231425/can-someone-help-to-explain-the-difference-between-independent-and-random?noredirect=1&lq=1).  
-[]()
+[When should I use lasso vs ridge?](http://stats.stackexchange.com/questions/866/when-should-i-use-lasso-vs-ridge).  
+[Relationship between SVD and PCA. How to use SVD to perform PCA?](http://stats.stackexchange.com/questions/134282/relationship-between-svd-and-pca-how-to-use-svd-to-perform-pca).  
+[How to reverse PCA and reconstruct original variables from several principal](http://stats.stackexchange.com/questions/229092/how-to-reverse-pca-and-reconstruct-original-variables-from-several-principal-com?rq=1).  
+[Bagging, boosting and stacking in machine learning](http://stats.stackexchange.com/questions/18891/bagging-boosting-and-stacking-in-machine-learning).    
+[In linear regression, when is it appropriate to use the log of an independent variable instead of the actual values?](http://stats.stackexchange.com/questions/298/in-linear-regression-when-is-it-appropriate-to-use-the-log-of-an-independent-va).  
+[How to interpret a QQ plot](http://stats.stackexchange.com/questions/101274/how-to-interpret-a-qq-plot).    
+
 
 
 ## Other Sources
@@ -134,11 +140,6 @@ It has also been suggested that using the Shapley value, a game theory tool, the
 [How do I select SVM kernels?](https://www.quora.com/How-do-I-select-SVM-kernels/answer/Sebastian-Raschka-1?srid=9yUC).   
 [What is the best visual explanation for the back propagation algorithm for neural networks?](https://www.quora.com/What-is-the-best-visual-explanation-for-the-back-propagation-algorithm-for-neural-networks/answer/Sebastian-Raschka-1?srid=9yUC).  
 [How do I debug an artificial neural network algorithm?](https://www.quora.com/How-do-I-debug-an-artificial-neural-network-algorithm/answer/Sebastian-Raschka-1?srid=9yUC).  
-[Relationship between SVD and PCA. How to use SVD to perform PCA?](http://stats.stackexchange.com/questions/134282/relationship-between-svd-and-pca-how-to-use-svd-to-perform-pca).  
-[How to reverse PCA and reconstruct original variables from several principal](http://stats.stackexchange.com/questions/229092/how-to-reverse-pca-and-reconstruct-original-variables-from-several-principal-com?rq=1).  
-[Bagging, boosting and stacking in machine learning](http://stats.stackexchange.com/questions/18891/bagging-boosting-and-stacking-in-machine-learning).  
-[In linear regression, when is it appropriate to use the log of an independent variable instead of the actual values?](http://stats.stackexchange.com/questions/298/in-linear-regression-when-is-it-appropriate-to-use-the-log-of-an-independent-va)
-[How to interpret a QQ plot](http://stats.stackexchange.com/questions/101274/how-to-interpret-a-qq-plot).  
 
 
 ## From Quora
