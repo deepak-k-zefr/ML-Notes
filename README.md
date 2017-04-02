@@ -82,8 +82,7 @@ Recall (R) is defined as the number of true positives (T_{p}) over the number of
 
 R = (T_p)/(T_p+F_n)
 
-These quantities are also related to the (F_{1}) score, which is defined as the harmonic mean of precision and recall.
-F1 = 2\frac{P times R}{P+R}
+These quantities are also related to the (F_1) score, which is defined as the harmonic mean of precision and recall.
 
 ## What is Bayes’ Theorem? How is it useful in a machine learning context?
 
