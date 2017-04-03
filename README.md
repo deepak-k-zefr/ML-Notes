@@ -44,7 +44,7 @@ There is no  assumption on data, errors or targets. In theory a Neural Network c
 
 ##  What’s the trade-off between bias and variance?
 
-More reading : Bias-Variance Tradeoff (Wikipedia)
+More reading : [Bias-Variance Tradeoff (Wikipedia)](https://en.wikipedia.org/wiki/Bias%E2%80%93variance_tradeoff)
 
 Bias is error due to erroneous or overly simplistic assumptions in the learning algorithm you’re using. This can lead to the model underfitting your data, making it hard for it to have high predictive accuracy and for you to generalize your knowledge from the training set to the test set.
 
@@ -56,7 +56,7 @@ The bias-variance decomposition essentially decomposes the learning error from a
 
 ##  How is KNN different from k-means clustering?
 
-More reading : How is the k-nearest neighbor algorithm different from k-means clustering? (Quora)
+More reading : [How is the k-nearest neighbor algorithm different from k-means clustering?](http://stats.stackexchange.com/questions/56500/what-are-the-main-differences-between-k-means-and-k-nearest-neighbours)
 
 K-Nearest Neighbors is a supervised classification algorithm, while k-means clustering is an unsupervised clustering algorithm. While the mechanisms may seem similar at first, what this really means is that in order for K-Nearest Neighbors to work, you need labeled data you want to classify an unlabeled point into (thus the nearest neighbor part). K-means clustering requires only a set of unlabeled points and a threshold: the algorithm will take unlabeled points and gradually learn how to cluster them into groups by computing the mean of the distance between different points.
 
@@ -66,7 +66,7 @@ The critical difference here is that KNN needs labeled points and is thus superv
 
 ##  Explain how a ROC curve works.
 
-More reading: Receiver operating characteristic (Wikipedia)
+More reading: [Receiver operating characteristic (Wikipedia)](https://en.wikipedia.org/wiki/Receiver_operating_characteristic)
 
 The ROC curve is a graphical representation of the contrast between true positive rates and the false positive rate at various thresholds. It’s often used as a proxy for the trade-off between the sensitivity of the model (true positives) vs the fall-out or the probability it will trigger a false alarm (false positives).
 
