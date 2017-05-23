@@ -14,7 +14,7 @@ SOURCES:
 * Linear relationship
 * Multivariate normality
 * No or little multicollinearity
-* No auto-correlation
+* No auto-correlation(Autocorrelation occurs when the residuals are not independent from each other.  In other words when the value of y(x+1) is not independent from the value of y(x).)
 * Homoscedasticity
 
 More reading : http://r-statistics.co/Assumptions-of-Linear-Regression.html.   
