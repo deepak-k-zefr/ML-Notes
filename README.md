@@ -75,12 +75,18 @@ The AUC of a classifier is equal to the probability that the classifier will ran
 
 ### Sensitivity And Specificity
 
+Sensitivity refers to the test's ability to correctly detect patients who do have the condition.In the example of a medical test used to identify a disease, the sensitivity of the test is the proportion of people who test positive for the disease among those who have the disease. Mathematically, this can be expressed as:
+
 ![Sensitivity](https://wikimedia.org/api/rest_v1/media/math/render/svg/fbad73213a4578685fefa43ec96ce53533057e11)
 
-(Image of High Sensitivity Low Specificity)[https://en.wikipedia.org/wiki/File:HighSensitivity_LowSpecificity_1401x1050.png] - Lesser False Negatives.
+[Image of High Sensitivity Low Specificity](https://en.wikipedia.org/wiki/File:HighSensitivity_LowSpecificity_1401x1050.png) - Lesser False Negatives.
 
-(Image of Low Sensitivity High Specificity)[https://en.wikipedia.org/wiki/File:LowSensitivity_HighSpecificity_1400x1050.png]
+Specificity relates to the test's ability to correctly detect patients without a condition.  Consider the example of a medical test for diagnosing a disease. Specificity of a test is the proportion of healthy patients known not to have the disease, who will test negative for it. Mathematically, this can also be written as:
 
+[Image of Low Sensitivity High Specificity](https://en.wikipedia.org/wiki/File:LowSensitivity_HighSpecificity_1400x1050.png)
+![Specificity](https://wikimedia.org/api/rest_v1/media/math/render/svg/d7856a809dafad4fa9566eef65b37bedeaa53132)
+
+[Worked out example image](https://en.wikipedia.org/wiki/Template:SensSpecPPVNPV)
 
 ##  Define precision and recall.
 More Reading: [precision and recall-Scikit Learn](http://scikit-learn.org/stable/auto_examples/model_selection/plot_precision_recall.html)
