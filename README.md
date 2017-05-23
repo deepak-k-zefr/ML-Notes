@@ -70,6 +70,17 @@ More reading: [Receiver operating characteristic (Wikipedia)](https://en.wikiped
 
 The ROC curve is a graphical representation of the contrast between true positive rates and the false positive rate at various thresholds. It’s often used as a proxy for the trade-off between the sensitivity of the model (true positives) vs the fall-out or the probability it will trigger a false alarm (false positives).
 
+### AUC
+The AUC of a classifier is equal to the probability that the classifier will rank a randomly chosen positive example higher than a randomly chosen negative example, i.e. P(score(x+)>score(x−))
+
+### Sensitivity And Specificity
+
+![Sensitivity]https://wikimedia.org/api/rest_v1/media/math/render/svg/fbad73213a4578685fefa43ec96ce53533057e11
+
+(Image of High Sensitivity Low Specificity)[https://en.wikipedia.org/wiki/File:HighSensitivity_LowSpecificity_1401x1050.png] - Lesser False Negatives.
+
+(Image of Low Sensitivity High Specificity)[https://en.wikipedia.org/wiki/File:LowSensitivity_HighSpecificity_1400x1050.png]
+
 
 ##  Define precision and recall.
 More Reading: [precision and recall-Scikit Learn](http://scikit-learn.org/stable/auto_examples/model_selection/plot_precision_recall.html)
