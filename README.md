@@ -75,7 +75,7 @@ The AUC of a classifier is equal to the probability that the classifier will ran
 
 ### Sensitivity And Specificity
 
-![Sensitivity]https://wikimedia.org/api/rest_v1/media/math/render/svg/fbad73213a4578685fefa43ec96ce53533057e11
+![Sensitivity](https://wikimedia.org/api/rest_v1/media/math/render/svg/fbad73213a4578685fefa43ec96ce53533057e11)
 
 (Image of High Sensitivity Low Specificity)[https://en.wikipedia.org/wiki/File:HighSensitivity_LowSpecificity_1401x1050.png] - Lesser False Negatives.
 
