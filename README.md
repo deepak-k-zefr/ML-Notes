@@ -52,6 +52,7 @@ Variance is error due to too much complexity in the learning algorithm you’re 
 
 The bias-variance decomposition essentially decomposes the learning error from any algorithm by adding the bias, the variance and a bit of irreducible error due to noise in the underlying dataset. Essentially, if you make the model more complex and add more variables, you’ll lose bias but gain some variance — in order to get the optimally reduced amount of error, you’ll have to tradeoff bias and variance. You don’t want either high bias or high variance in your model.
 
+![Graphical illustration of bias and varianceFrom Understanding the Bias-Variance Tradeoff, by Scott Fortmann-Roe.](http://www.kdnuggets.com/wp-content/uploads/bias-and-variance.jpg)
 
 
 ##  How is KNN different from k-means clustering?
