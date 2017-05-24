@@ -84,9 +84,11 @@ Specificity relates to the test's ability to correctly detect patients without a
 
 ![Specificity](https://wikimedia.org/api/rest_v1/media/math/render/svg/d7856a809dafad4fa9566eef65b37bedeaa53132)
 
-[Image of High Sensitivity Low Specificity](https://en.wikipedia.org/wiki/File:HighSensitivity_LowSpecificity_1401x1050.png)  Lesser False Negatives and more False Positives. Detect more people with the disease.
+![Image of High Sensitivity Low Specificity](https://upload.wikimedia.org/wikipedia/commons/e/e2/HighSensitivity_LowSpecificity_1401x1050.png)
 
-[Image of Low Sensitivity High Specificity](https://en.wikipedia.org/wiki/File:LowSensitivity_HighSpecificity_1400x1050.png)
+Lesser False Negatives and more False Positives. Detect more people with the disease.
+
+[Image of Low Sensitivity High Specificity](https://upload.wikimedia.org/wikipedia/commons/a/a6/LowSensitivity_HighSpecificity_1400x1050.png)
 Lesser False Positives and more False Negatives. Detect more people without the disease.
 
 [Worked out example image](https://en.wikipedia.org/wiki/Template:SensSpecPPVNPV)
