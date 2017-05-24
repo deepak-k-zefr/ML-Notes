@@ -94,13 +94,17 @@ Lesser False Positives and more False Negatives. Detect more people without the 
 ##  Define precision and recall.
 More Reading: [precision and recall-Scikit Learn](http://scikit-learn.org/stable/auto_examples/model_selection/plot_precision_recall.html)
 
+
+
+[Precision and Recall](https://upload.wikimedia.org/wikipedia/commons/2/26/Precisionrecall.svg)!
+
 Precision (P) is defined as the number of true positives (T_p) over the number of true positives plus the number of false positives (F_p).
 
-P = T_p/(T_p+F_p)
+![Precision =](https://wikimedia.org/api/rest_v1/media/math/render/svg/26106935459abe7c266f7b1ebfa2a824b334c807)
 
 Recall (R) is defined as the number of true positives (T_{p}) over the number of true positives plus the number of false negatives (F_n).
 
-R = (T_p)/(T_p+F_n)
+![Recall =](https://wikimedia.org/api/rest_v1/media/math/render/svg/4c233366865312bc99c832d1475e152c5074891b)
 
 These quantities are also related to the (F_1) score, which is defined as the harmonic mean of precision and recall.
 
