@@ -70,8 +70,12 @@ More reading: [Receiver operating characteristic (Wikipedia)](https://en.wikiped
 
 The ROC curve is a graphical representation of the contrast between true positive rates and the false positive rate at various thresholds. It’s often used as a proxy for the trade-off between the sensitivity of the model (true positives) vs the fall-out or the probability it will trigger a false alarm (false positives).
 
+
+
 ### AUC
 The AUC of a classifier is equal to the probability that the classifier will rank a randomly chosen positive example higher than a randomly chosen negative example, i.e. P(score(x+)>score(x−))
+
+
 
 ### Sensitivity And Specificity
 
@@ -88,8 +92,6 @@ Specificity relates to the test's ability to correctly detect patients without a
 
 Lesser False Negatives and more False Positives. Detect more people with the disease.
 
-[Image of Low Sensitivity High Specificity](https://upload.wikimedia.org/wikipedia/commons/a/a6/LowSensitivity_HighSpecificity_1400x1050.png)
-Lesser False Positives and more False Negatives. Detect more people without the disease.
 
 [Worked out example image](https://en.wikipedia.org/wiki/Template:SensSpecPPVNPV)
 
@@ -97,18 +99,20 @@ Lesser False Positives and more False Negatives. Detect more people without the 
 More Reading: [precision and recall-Scikit Learn](http://scikit-learn.org/stable/auto_examples/model_selection/plot_precision_recall.html)
 
 
-
 [Precision and Recall](https://upload.wikimedia.org/wikipedia/commons/2/26/Precisionrecall.svg)!
 
-Precision (P) is defined as the number of true positives (T_p) over the number of true positives plus the number of false positives (F_p).
+Precision (P) is defined as the number of true positives (Tp) over the number of true positives plus the number of false positives (Fp).
 
 ![Precision =](https://wikimedia.org/api/rest_v1/media/math/render/svg/26106935459abe7c266f7b1ebfa2a824b334c807)
 
-Recall (R) is defined as the number of true positives (T_{p}) over the number of true positives plus the number of false negatives (F_n).
+Recall (R) is defined as the number of true positives (Tp}) over the number of true positives plus the number of false negatives (Fn).
 
 ![Recall =](https://wikimedia.org/api/rest_v1/media/math/render/svg/4c233366865312bc99c832d1475e152c5074891b)
 
-These quantities are also related to the (F_1) score, which is defined as the harmonic mean of precision and recall.
+These quantities are also related to the (F1) score, which is defined as the harmonic mean of precision and recall.
+
+
+
 
 ## What is Bayes’ Theorem? How is it useful in a machine learning context?
 
