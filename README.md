@@ -12,11 +12,20 @@ SOURCES:
 
 ## Linear Regression
 
-* Linear relationship
-* Multivariate normality
+* Linear relationship (Model is linear in parameters)
+The linearity assumption can best be tested with scatter plots
+
 * No or little multicollinearity
+There is no perfect linear relationship between explanatory variables. Multicollinearity occurs when the independent variables are not independent from each other. 
+
+ 1) Correlation matrix – when computing the matrix of Pearson's Bivariate Correlation among all independent variables the correlation coefficients need to be smaller than 1.
+ 2) VIF is a metric computed for every X variable that goes into a linear model. If the VIF of a variable is high, it means the information in that variable is already explained by other X variables present in the given model, which means, more redundant is that variable. So, lower the VIF (<2) the better
+
+* Normality of residuals
+
+* The mean of residuals is zero
 * No auto-correlation(Autocorrelation occurs when the residuals are not independent from each other.  In other words when the value of y(x+1) is not independent from the value of y(x).)
-* Homoscedasticity
+* Homoscedasticity of residuals or equal variance
 
 More reading : http://r-statistics.co/Assumptions-of-Linear-Regression.html.   
 More reading : http://www.statisticssolutions.com/assumptions-of-linear-regression/.  
@@ -44,8 +53,18 @@ of the typical assumptions tested in statistical analysis.
 * Does not assume linearity between DV and IVs.
 * Does not assume homoscedasticity.
 * Does not assume normal errors.
-* MLE allows more flexibility in the data and analysis because it has
-fewer restrictions.
+* MLE allows more flexibility in the data and analysis because it has fewer restrictions.
+
+
+## Lasso
+lasso (least absolute shrinkage and selection operator) is a regression analysis method that performs both variable selection and regularization in order to enhance the prediction accuracy and interpretability of the statistical model it produce
+
+It penalizes the absolute size of the regression coefficients
+
+![Lasso eqn](https://wikimedia.org/api/rest_v1/media/math/render/svg/2904b78ec712617fdef0bd35e28442b9c1b35b03)
+
+Here  *t* is a prespecified free parameter that determines the amount of regularisation
+
 
 ## Neural Networks
 
