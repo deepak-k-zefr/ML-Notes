@@ -3,9 +3,10 @@
 SOURCES:
 
 * Quora
-* Springboard
 * Wikipedia
 * Cross Validates
+* Springboard
+
 
 # Assumptions of Various Models
 
@@ -21,8 +22,15 @@ More reading : http://r-statistics.co/Assumptions-of-Linear-Regression.html.
 More reading : http://www.statisticssolutions.com/assumptions-of-linear-regression/.  
 More reading : http://www.nitiphong.com/paper_pdf/OLS_Assumptions.pdf.  
 
+## Gauss–Markov theorem
+
+In statistics, the Gauss–Markov theorem, states that in a linear regression model in which the errors have expectation zero and are uncorrelated and have equal variances, the best linear unbiased estimator (BLUE) of the coefficients is given by the ordinary least squares (OLS) estimator, provided it exists. 
+
+Here "best" means giving the lowest variance of the estimate, as compared to other unbiased, linear estimators. The errors do not need to be normal, nor do they need to be independent and identically distributed (only uncorrelated with mean zero and homoscedastic with finite variance). The requirement that the estimator be unbiased cannot be dropped, since biased estimators exist with lower variance.
+
 
 ## Logistic Regression
+
 * No outliers.(Use z-scores, histograms, and k-means clustering, to identify and remove outliers
 and analyze residuals to identify outliers in the regression)
 * Independent errors.(Like OLS, error terms are assumed uncorrelated.)
@@ -40,9 +48,10 @@ of the typical assumptions tested in statistical analysis.
 fewer restrictions.
 
 ## Neural Networks
+
 There is no  assumption on data, errors or targets. In theory a Neural Network can approximate any function and this is done without assumptions, it only depends on data and network configuration.
 
-##  What’s the trade-off between bias and variance?
+## Bias Variance Trade-off
 
 More reading : [Bias-Variance Tradeoff (Wikipedia)](https://en.wikipedia.org/wiki/Bias%E2%80%93variance_tradeoff)
 
@@ -64,7 +73,6 @@ K-Nearest Neighbors is a supervised classification algorithm, while k-means clus
 The critical difference here is that KNN needs labeled points and is thus supervised learning, while k-means doesn’t — and is thus unsupervised learning.
 
 
-
 ##  Explain how a ROC curve works.
 
 More reading: [Receiver operating characteristic (Wikipedia)](https://en.wikipedia.org/wiki/Receiver_operating_characteristic)
@@ -74,6 +82,7 @@ The ROC curve is a graphical representation of the contrast between true positiv
 
 
 ### AUC
+
 The AUC of a classifier is equal to the probability that the classifier will rank a randomly chosen positive example higher than a randomly chosen negative example, i.e. P(score(x+)>score(x−))
 
 
@@ -97,6 +106,7 @@ Lesser False Negatives and more False Positives. Detect more people with the dis
 [Worked out example image](https://en.wikipedia.org/wiki/Template:SensSpecPPVNPV)
 
 ##  Define precision and recall.
+
 More Reading: [precision and recall-Scikit Learn](http://scikit-learn.org/stable/auto_examples/model_selection/plot_precision_recall.html)
 
 
@@ -127,13 +137,51 @@ Bayes’ Theorem says no. It says that you have a (.6 * 0.05) (True Positive Rat
 
 Bayes’ Theorem is the basis behind a branch of machine learning that most notably includes the Naive Bayes classifier. That’s something important to consider when you’re faced with machine learning interview questions.
 
+
+
+
+## Naive Bayes spam filtering
+
+Particular words have particular probabilities of occurring in spam email and in legitimate email. For instance, most email users will frequently encounter the word "Viagra" in spam email, but will seldom see it in other email. The filter doesn't know these probabilities in advance, and must first be trained so it can build them up. To train the filter, the user must manually indicate whether a new email is spam or not. For all words in each training email, the filter will adjust the probabilities that each word will appear in spam or legitimate email in its database. For instance, Bayesian spam filters will typically have learned a very high spam probability for the words "Viagra" and "refinance", but a very low spam probability for words seen only in legitimate email, such as the names of friends and family members
+
+After training, the word probabilities (also known as likelihood functions) are used to compute the probability that an email with a particular set of words in it belongs to either category. Each word in the email contributes to the email's spam probability, or only the most interesting words. This contribution is called the posterior probability and is computed using Bayes' theorem. Then, the email's spam probability is computed over all words in the email, and if the total exceeds a certain threshold (say 95%), the filter will mark the email as a spam.
+
+Bayesian email filters utilize Bayes' theorem. Bayes' theorem is used several times in the context of spam:
+
+### Mathematical foundation
+
+* a first time, to compute the probability that the message is spam, knowing that a given word appears in this message;
+* a second time, to compute the probability that the message is spam, taking into consideration all of its words (or a relevant subset of them);
+* sometimes a third time, to deal with rare words.
+
+
+
+Let's suppose the suspected message contains the word "replica". Most people who are used to receiving e-mail know that this message is likely to be spam, more precisely a proposal to sell counterfeit copies of well-known brands of watches. The spam detection software, however, does not "know" such facts; all it can do is compute probabilities.
+
+The formula used by the software to determine that, is derived from Bayes' theorem
+![Bayes Theorem](https://wikimedia.org/api/rest_v1/media/math/render/svg/dc8c39ec48e65c0ab10dabe343d4da9a9585a77b)
+
+where:
+
+{\displaystyle \Pr(S|W)} \Pr(S|W) is the probability that a message is a spam, knowing that the word "replica" is in it;
+{\displaystyle \Pr(S)} \Pr(S) is the overall probability that any given message is spam;
+{\displaystyle \Pr(W|S)} \Pr(W|S) is the probability that the word "replica" appears in spam messages;
+{\displaystyle \Pr(H)} \Pr(H) is the overall probability that any given message is not spam (is "ham");
+{\displaystyle \Pr(W|H)} \Pr(W|H) is the probability that the word "replica" appears in ham messages.
+Computing the probability that a message containing a given word is spam
+
+
+
+
 ## What is the difference between Discriminative an Generative models?
+
 * [Generative vs. discriminative Stackoverflow](https://stats.stackexchange.com/questions/12421/generative-vs-discriminative)
 * [Andrew Ng Generative Learning Algorithms](https://www.youtube.com/watch?v=z5UQyCESW64)
 * [Generative vs Discriminative Good explanation](https://www.youtube.com/watch?v=OWJ8xVGRyFA)
 
 
 ## Remedies for multicollinearity
+
 * Make sure you have not fallen into the dummy variable trap; including a dummy variable for every category (e.g., summer, autumn, winter, and spring) and including a constant term in the regression together guarantee perfect multicollinearity.
 * Try seeing what happens if you use independent subsets of your data for estimation and apply those estimates to the whole data set. Theoretically you should obtain somewhat higher variance from the smaller datasets used for estimation, but the expectation of the coefficient values should be the same. Naturally, the observed coefficient values will vary, but look at how much they vary.
 * Leave the model as is, despite multicollinearity. The presence of multicollinearity doesn't affect the efficacy of extrapolating the fitted model to new data provided that the predictor variables follow the same pattern of multicollinearity in the new data as in the data on which the regression model is based.[9]
