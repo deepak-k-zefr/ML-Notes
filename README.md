@@ -73,7 +73,7 @@ K-Nearest Neighbors is a supervised classification algorithm, while k-means clus
 The critical difference here is that KNN needs labeled points and is thus supervised learning, while k-means doesn’t — and is thus unsupervised learning.
 
 
-##  Explain how a ROC curve works.
+##   ROC curve 
 
 More reading: [Receiver operating characteristic (Wikipedia)](https://en.wikipedia.org/wiki/Receiver_operating_characteristic)
 
@@ -105,7 +105,8 @@ Lesser False Negatives and more False Positives. Detect more people with the dis
 
 [Worked out example image](https://en.wikipedia.org/wiki/Template:SensSpecPPVNPV)
 
-##  Define precision and recall.
+
+## Precision and Recall.
 
 More Reading: [precision and recall-Scikit Learn](http://scikit-learn.org/stable/auto_examples/model_selection/plot_precision_recall.html)
 
@@ -172,7 +173,7 @@ Pr(W|H) is the probability that the word "replica" appears in ham messages.
 Computing the probability that a message containing a given word is spam
 
 
-## What is the difference between Discriminative an Generative models?
+## Discriminative and Generative models
 
 * [Generative vs. discriminative Stackoverflow](https://stats.stackexchange.com/questions/12421/generative-vs-discriminative)
 * [Andrew Ng Generative Learning Algorithms](https://www.youtube.com/watch?v=z5UQyCESW64)
