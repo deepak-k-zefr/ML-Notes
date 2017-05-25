@@ -125,7 +125,7 @@ These quantities are also related to the (F1) score, which is defined as the har
 
 
 
-## What is Bayes’ Theorem? How is it useful in a machine learning context?
+##  Bayes’ Theorem
 
 [More reading: An Intuitive (and Short) Explanation of Bayes’ Theorem (BetterExplained)](https://betterexplained.com/articles/an-intuitive-and-short-explanation-of-bayes-theorem/)
 
@@ -163,14 +163,13 @@ The formula used by the software to determine that, is derived from Bayes' theor
 
 where:
 
-{\displaystyle \Pr(S|W)} \Pr(S|W) is the probability that a message is a spam, knowing that the word "replica" is in it;
-{\displaystyle \Pr(S)} \Pr(S) is the overall probability that any given message is spam;
-{\displaystyle \Pr(W|S)} \Pr(W|S) is the probability that the word "replica" appears in spam messages;
-{\displaystyle \Pr(H)} \Pr(H) is the overall probability that any given message is not spam (is "ham");
-{\displaystyle \Pr(W|H)} \Pr(W|H) is the probability that the word "replica" appears in ham messages.
+Pr(S|W) is the probability that a message is a spam, knowing that the word "replica" is in it;
+Pr(S) is the overall probability that any given message is spam;
+Pr(W|S) is the probability that the word "replica" appears in spam messages;
+Pr(H) is the overall probability that any given message is not spam (is "ham");
+Pr(W|H) is the probability that the word "replica" appears in ham messages.
+
 Computing the probability that a message containing a given word is spam
-
-
 
 
 ## What is the difference between Discriminative an Generative models?
@@ -183,17 +182,26 @@ Computing the probability that a message containing a given word is spam
 ## Remedies for multicollinearity
 
 * Make sure you have not fallen into the dummy variable trap; including a dummy variable for every category (e.g., summer, autumn, winter, and spring) and including a constant term in the regression together guarantee perfect multicollinearity.
+
 * Try seeing what happens if you use independent subsets of your data for estimation and apply those estimates to the whole data set. Theoretically you should obtain somewhat higher variance from the smaller datasets used for estimation, but the expectation of the coefficient values should be the same. Naturally, the observed coefficient values will vary, but look at how much they vary.
-* Leave the model as is, despite multicollinearity. The presence of multicollinearity doesn't affect the efficacy of extrapolating the fitted model to new data provided that the predictor variables follow the same pattern of multicollinearity in the new data as in the data on which the regression model is based.[9]
+
+* Leave the model as is, despite multicollinearity. The presence of multicollinearity doesn't affect the efficacy of extrapolating the fitted model to new data provided that the predictor variables follow the same pattern of multicollinearity in the new data as in the data on which the regression model is based.
+
 * Drop one of the variables. An explanatory variable may be dropped to produce a model with significant coefficients. However, you lose information (because you've dropped a variable). Omission of a relevant variable results in biased coefficient estimates for the remaining explanatory variables that are correlated with the dropped variable.
+
 * Obtain more data, if possible. This is the preferred solution. More data can produce more precise parameter estimates (with lower standard errors), as seen from the formula in variance inflation factor for the variance of the estimate of a regression coefficient in terms of the sample size and the degree of multicollinearity.
-* Mean-center the predictor variables. Generating polynomial terms (i.e., for {\displaystyle x_{1}} x_{1}, {\displaystyle x_{1}^{2}} x_{1}^{2}, {\displaystyle x_{1}^{3}} x_{1}^{3}, etc.) or interaction terms (i.e., {\displaystyle x_{1}\times x_{2}} {\displaystyle x_{1}\times x_{2}}, etc.) can cause some multicollinearity if the variable in question has a limited range (e.g., [2,4]). Mean-centering will eliminate this special kind of multicollinearity. However, in general, this has no effect. It can be useful in overcoming problems arising from rounding and other computational steps if a carefully designed computer program is not used.
-* Standardize your independent variables. This may help reduce a false flagging of a condition index above 30.
-It has also been suggested that using the Shapley value, a game theory tool, the model could account for the effects of multicollinearity. The Shapley value assigns a value for each predictor and assesses all possible combinations of importance.[10]
+
+* Mean-center the predictor variables.
+
+* Standardize your independent variables. This may help reduce a false flagging of a condition index above 30.It has also been suggested that using the Shapley value, a game theory tool, the model could account for the effects of multicollinearity. The Shapley value assigns a value for each predictor and assesses all possible combinations of importance.
+
 * Ridge regression or principal component regression or partial least squares regression can be used.
+
 * If the correlated explanators are different lagged values of the same underlying explanator, then a distributed lag technique can be used, imposing a general structure on the relative values of the coefficients to be estimated.
 
 ## From Cross Validated
+
+
 [What is the difference between “likelihood” and “probability”?](https://stats.stackexchange.com/questions/2641/what-is-the-difference-between-likelihood-and-probability).  
 [Is there a standard and accepted method for selecting the number of layers, and the number of nodes in each layer, in a feed-forward neural network? I'm interested in automated ways of building neural networks.](http://stats.stackexchange.com/questions/181/how-to-choose-the-number-of-hidden-layers-and-nodes-in-a-feedforward-neural-netw).  
 [What does the hidden layer in a neural network compute?](http://stats.stackexchange.com/questions/63152/what-does-the-hidden-layer-in-a-neural-network-compute?rq=1).  
