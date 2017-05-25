@@ -1,4 +1,4 @@
-# ML-questions-and-answers
+# ML-Notes
 
 SOURCES:
 
@@ -46,6 +46,24 @@ and analyze residuals to identify outliers in the regression)
 * Independent errors.(Like OLS, error terms are assumed uncorrelated.)
 * No multicollinearity.(Check zero-order correlation matrix for high values (ie r>0.7)
 
+
+
+### Definition of the logistic function
+
+An explanation of logistic regression can begin with an explanation of the standard logistic function. The logistic function is useful because it can take any real input  *t*, whereas the output always takes values between zero and one and hence is interpretable as a probability. 
+
+![formula](https://wikimedia.org/api/rest_v1/media/math/render/svg/5e648e1dd38ef843d57777cd34c67465bbca694f)
+
+
+The logistic function sigma (t) is defined as follows:
+
+![fig](https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Logistic-curve.svg/640px-Logistic-curve.svg.png)
+
+![](https://wikimedia.org/api/rest_v1/media/math/render/svg/836d93163447344be4715ec00638c1cd829e376c)
+
+![](https://wikimedia.org/api/rest_v1/media/math/render/svg/57fa62921bfe1721bca86f8db39f44f4c1094cd5)
+
+
 More Reading :https://onlinecourses.science.psu.edu/stat504/node/164
 
  Because logistic regression uses MLE rather than OLS, it avoids many
@@ -67,6 +85,29 @@ It penalizes the absolute size of the regression coefficients
 
 Here  *t* is a prespecified free parameter that determines the amount of regularisation
 
+![Lasso vs Ridge](https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/L1_and_L2_balls.svg/1600px-L1_and_L2_balls.svg.png)
+
+
+## Ridge Regression
+
+Motivation: too many predictors
+
+It is not unusual to see the number of input variables greatly exceed the number of observations, e.g. micro-array data analysis, environmental pollution studies.
+
+With many predictors, fitting the full model without penalization will result in large prediction intervals, and LS regression estimator may not uniquely exist.
+
+
+## Elastic Net
+
+ Elastic net is a regularized regression method that linearly combines the L1 and L2 penalties of the lasso and ridge methods
+ The elastic net method overcomes the limitations of the LASSO (least absolute shrinkage and selection operator) method which uses a penalty function based on
+
+![Lasso Penalty](https://wikimedia.org/api/rest_v1/media/math/render/svg/5a188f4b162086fb06a4485f3336baefc22e18b3)
+
+Use of this penalty function has several limitations.[1] For example, in the "large p, small n" case (high-dimensional data with few examples), the LASSO selects at most n variables before it saturates. Also if there is a group of highly correlated variables, then the LASSO tends to select one variable from a group and ignore the others. To overcome these limitations, the elastic net adds a quadratic part to the penalty, which when used alone is ridge regression (known also as Tikhonov regularization). The estimates from the elastic net method are defined by
+
+
+![](https://wikimedia.org/api/rest_v1/media/math/render/svg/48b3ad7bcf1954b906d16dde0c1d3b65ca8d45aa)
 
 ## Neural Networks
 
