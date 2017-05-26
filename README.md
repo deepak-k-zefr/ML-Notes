@@ -159,6 +159,8 @@ The above procedure describes the original bagging algorithm for trees. Random f
 
 Typically, for a classification problem with p features, √p (rounded down) features are used in each split. For regression problems the inventors recommend p/3 (rounded down) with a minimum node size of 5 as the default.
 
+![](https://databricks.com/wp-content/uploads/2015/01/Ensemble-example.png)
+
 ## Bias Variance Trade-off
 
 More reading : [Bias-Variance Tradeoff (Wikipedia)](https://en.wikipedia.org/wiki/Bias%E2%80%93variance_tradeoff)
