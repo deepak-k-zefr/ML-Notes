@@ -10,21 +10,22 @@ SOURCES:
 
 ## Linear Regression
 
-* Linear relationship (Model is linear in parameters)
-The linearity assumption can best be tested with scatter plots
+* **Linear relationship (Model is linear in parameters)**
+The linearity assumption can best be observed in scatter plots
 
-* No or little multicollinearity
+* **No or little multicollinearity**
 There is no perfect linear relationship between explanatory variables. Multicollinearity occurs when the independent variables are not independent from each other. 
   * Correlation matrix – when computing the matrix of Pearson's Bivariate Correlation among all independent variables the correlation coefficients need to be smaller than 1.
   * VIF is a metric computed for every X variable that goes into a linear model. If the VIF of a variable is high, it means the information in that variable is already explained by other X variables present in the given model, which means, more redundant is that variable. So, lower the VIF (<2) the better
 
-* Normality of residuals
+* **Normality of residuals**
 
-* The mean of residuals is zero
+* **The mean of residuals is zero**
 
-* No auto-correlation(Autocorrelation occurs when the residuals are not independent from each other.  In other words when the value of y(x+1) is not independent from the value of y(x).)
+* **No auto-correlation**
+(Autocorrelation occurs when the residuals are not independent from each other.  In other words when the value of y(x+1) is not independent from the value of y(x).) It is observed in time series data.
 
-* Homoscedasticity of residuals or equal variance
+* **Homoscedasticity of residuals or equal variance**
 
 More reading : http://r-statistics.co/Assumptions-of-Linear-Regression.html.   
 More reading : http://www.statisticssolutions.com/assumptions-of-linear-regression/.  
@@ -39,10 +40,10 @@ Here "best" means giving the lowest variance of the estimate, as compared to oth
 
 ## Logistic Regression
 
-* No outliers.(Use z-scores, histograms, and k-means clustering, to identify and remove outliers
+* **No outliers.(Use z-scores, histograms, and k-means clustering, to identify and remove outliers**
 and analyze residuals to identify outliers in the regression)
-* Independent errors.(Like OLS, error terms are assumed uncorrelated.)
-* No multicollinearity.(Check zero-order correlation matrix for high values (ie r>0.7)
+* **Independent errors.(Like OLS, error terms are assumed uncorrelated.)**
+* **No multicollinearity.(Check zero-order correlation matrix for high values (ie r>0.7)**
 
 Logistic regression is considered a generalized linear model because the outcome always depends on the sum of the inputs and parameters. Or in other words, the output cannot depend on the product (or quotient, etc.) of its parameters! There's no interaction between the parameter weights, nothing like w_1*x_1 * w_2* x_2 or so, which would make our model non-linear!
 
