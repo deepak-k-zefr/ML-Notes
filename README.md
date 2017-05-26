@@ -8,8 +8,6 @@ SOURCES:
 * Springboard
 
 
-# Assumptions of Various Models
-
 ## Linear Regression
 
 * Linear relationship (Model is linear in parameters)
@@ -46,7 +44,7 @@ and analyze residuals to identify outliers in the regression)
 * Independent errors.(Like OLS, error terms are assumed uncorrelated.)
 * No multicollinearity.(Check zero-order correlation matrix for high values (ie r>0.7)
 
-
+Logistic regression is considered a generalized linear model because the outcome always depends on the sum of the inputs and parameters. Or in other words, the output cannot depend on the product (or quotient, etc.) of its parameters! There's no interaction between the parameter weights, nothing like w_1*x_1 * w_2* x_2 or so, which would make our model non-linear!
 
 ### Definition of the logistic function
 
@@ -59,9 +57,9 @@ The logistic function sigma (t) is defined as follows:
 
 ![fig](https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Logistic-curve.svg/640px-Logistic-curve.svg.png)
 
-![](https://wikimedia.org/api/rest_v1/media/math/render/svg/836d93163447344be4715ec00638c1cd829e376c)
+![fig](https://wikimedia.org/api/rest_v1/media/math/render/svg/836d93163447344be4715ec00638c1cd829e376c)
 
-![](https://wikimedia.org/api/rest_v1/media/math/render/svg/57fa62921bfe1721bca86f8db39f44f4c1094cd5)
+![fig](https://wikimedia.org/api/rest_v1/media/math/render/svg/57fa62921bfe1721bca86f8db39f44f4c1094cd5)
 
 
 More Reading :https://onlinecourses.science.psu.edu/stat504/node/164
@@ -74,6 +72,9 @@ of the typical assumptions tested in statistical analysis.
 * Does not assume normal errors.
 * MLE allows more flexibility in the data and analysis because it has fewer restrictions.
 
+
+## Generalized linear model
+GLM is a flexible generalization of ordinary linear regression that allows for response variables that have error distribution models other than a normal distribution
 
 ## Lasso
 
