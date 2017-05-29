@@ -7,15 +7,15 @@ SOURCES:
 * Cross Validates
 * Springboard
 
-**[Supervised Learning](./docs/Supervised_learning.md)
+** [Supervised Learning](./docs/Supervised_learning.
 
-**[Performance Metrics](./docs/Performance_metrics.md)
+** [Performance Metrics](./docs/Performance_metrics.md)
 
-**[Bayesian Statistics](./docs/Bayesian_statistics.md)
+** [Bayesian Statistics](./docs/Bayesian_statistics.md)
 
-**[Probabilistic Graphical Models](./docs/Probabilistic_graphical_model.md)
+** [Probabilistic Graphical Models](./docs/Probabilistic_graphical_model.md)
 
-**[Good Answers from forums](./docs/Answers.md)
+** [Good Answers from forums](./docs/Answers.md)
 
 
 
