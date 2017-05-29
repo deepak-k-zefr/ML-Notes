@@ -7,7 +7,7 @@ SOURCES:
 * Cross Validates
 * Springboard
 
-[Supervised Learning](./docs/Supervised_learning.
+[Supervised Learning](./docs/Supervised_learning.md)
 
 [Performance Metrics](./docs/Performance_metrics.md)
 
