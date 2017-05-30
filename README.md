@@ -4,7 +4,7 @@ SOURCES:
 
 * Quora
 * Wikipedia
-* Cross Validates
+* Cross Validated
 * Springboard
 
 
