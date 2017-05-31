@@ -8,21 +8,15 @@ SOURCES:
 * Springboard
 
 
-[Supervised Learning](./docs/Supervised_learning.md)
+## TOPICS
 
-[Performance Metrics](./docs/Performance_metrics.md)
-
-[Bayesian Statistics](./docs/Bayesian_statistics.md)
-
-[Probabilistic Graphical Models](./docs/Probabilistic_graphical_model.md)
-
-[Good Answers from forums](./docs/Answers.md)
-
-[Data Preprocessing](./docs/Preprocessing.md)
-
-[NLP](./docs/NLP.md)
-
-
+* [Supervised Learning](./docs/Supervised_learning.md)
+* [Performance Metrics](./docs/Performance_metrics.md)
+* [Bayesian Statistics](./docs/Bayesian_statistics.md)
+* [Probabilistic Graphical Models](./docs/Probabilistic_graphical_model.md)
+* [Good Answers from forums](./docs/Answers.md)
+* [Data Preprocessing](./docs/Preprocessing.md)
+* [NLP](./docs/NLP.md)
 
 
 ## Discriminative and Generative models
