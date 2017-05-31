@@ -49,3 +49,39 @@ Pr(W|H) is the probability that the word "replica" appears in ham messages.
 
 Computing the probability that a message containing a given word is spam
 
+
+
+
+### Naive Bayes Text	Classificaion
+
+Input:	
+* a	document	`d`
+* a	fixed	set	of	classes		`C	= {c1,	c2,…,	cJ}`	
+* A	training	set	of	m hand-labeled	documents	`(d1,c1),....,(dm,cm)`	
+
+Output:	
+a	predicted	class	`c ∈ C`
+
+
+Simple	(“naïve”)	classifica1on	method	based	on	
+Bayes	rule	
+* Relies	on	very	simple	representa1on	of	document	
+* Bag	of	words	
+
+•For	a	document	d and	a	class	c
+
+`P(d/c)=P(c/d)*P(d)/ P(c)`
+
+
+Naïve	Bayes	Classifier	(I)	
+
+`MAP` is “maximum a posteriori” = most likely class 
+
+
+`Cmap= argmax P(c|d) . (c belongs to C)`
+    `= P(d/c)*P(c) `
+
+
+https://web.stanford.edu/class/cs124/lec/naivebayes.pdf
+
+
