@@ -10,6 +10,7 @@ SOURCES:
 
 ## TOPICS
 
+* [Model Selection](./docs/Model_selection.md)
 * [Supervised Learning](./docs/Supervised_learning.md)
 * [Performance Metrics](./docs/Performance_metrics.md)
 * [Bayesian Statistics](./docs/Bayesian_statistics.md)
