@@ -69,39 +69,6 @@ of the typical assumptions tested in statistical analysis.
 ## Generalized linear model
 GLM is a flexible generalization of ordinary linear regression that allows for response variables that have error distribution models other than a normal distribution
 
-## Lasso
-
-lasso (least absolute shrinkage and selection operator) is a regression analysis method that performs both variable selection and regularization in order to enhance the prediction accuracy and interpretability of the statistical model it produce
-
-It penalizes the absolute size of the regression coefficients
-
-![Lasso eqn](https://wikimedia.org/api/rest_v1/media/math/render/svg/2904b78ec712617fdef0bd35e28442b9c1b35b03)
-
-Here  *t* is a prespecified free parameter that determines the amount of regularisation
-
-![Lasso vs Ridge](https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/L1_and_L2_balls.svg/1600px-L1_and_L2_balls.svg.png)
-
-
-## Ridge Regression
-
-Motivation: too many predictors
-
-It is not unusual to see the number of input variables greatly exceed the number of observations, e.g. micro-array data analysis, environmental pollution studies.
-
-With many predictors, fitting the full model without penalization will result in large prediction intervals, and LS regression estimator may not uniquely exist.
-
-
-## Elastic Net
-
- Elastic net is a regularized regression method that linearly combines the L1 and L2 penalties of the lasso and ridge methods
- The elastic net method overcomes the limitations of the LASSO (least absolute shrinkage and selection operator) method which uses a penalty function based on
-
-![Lasso Penalty](https://wikimedia.org/api/rest_v1/media/math/render/svg/5a188f4b162086fb06a4485f3336baefc22e18b3)
-
-Use of this penalty function has several limitations.[1] For example, in the "large p, small n" case (high-dimensional data with few examples), the LASSO selects at most n variables before it saturates. Also if there is a group of highly correlated variables, then the LASSO tends to select one variable from a group and ignore the others. To overcome these limitations, the elastic net adds a quadratic part to the penalty, which when used alone is ridge regression (known also as Tikhonov regularization). The estimates from the elastic net method are defined by
-
-
-![](https://wikimedia.org/api/rest_v1/media/math/render/svg/48b3ad7bcf1954b906d16dde0c1d3b65ca8d45aa)
 
 ## Neural Networks
 
@@ -154,18 +121,6 @@ Typically, for a classification problem with p features, √p (rounded down) fea
 
 ![](https://databricks.com/wp-content/uploads/2015/01/Ensemble-example.png)
 
-## Bias Variance Trade-off
-
-More reading : [Bias-Variance Tradeoff (Wikipedia)](https://en.wikipedia.org/wiki/Bias%E2%80%93variance_tradeoff)
-
-Bias is error due to erroneous or overly simplistic assumptions in the learning algorithm you’re using. This can lead to the model underfitting your data, making it hard for it to have high predictive accuracy and for you to generalize your knowledge from the training set to the test set.
-
-Variance is error due to too much complexity in the learning algorithm you’re using. This leads to the algorithm being highly sensitive to high degrees of variation in your training data, which can lead your model to overfit the data. You’ll be carrying too much noise from your training data for your model to be very useful for your test data.
-
-The bias-variance decomposition essentially decomposes the learning error from any algorithm by adding the bias, the variance and a bit of irreducible error due to noise in the underlying dataset. Essentially, if you make the model more complex and add more variables, you’ll lose bias but gain some variance — in order to get the optimally reduced amount of error, you’ll have to tradeoff bias and variance. You don’t want either high bias or high variance in your model.
-
-![Graphical illustration of bias and varianceFrom Understanding the Bias-Variance Tradeoff, by Scott Fortmann-Roe.](http://www.kdnuggets.com/wp-content/uploads/bias-and-variance.jpg)
-
 
 ## KNN vs k-means clustering
 
@@ -174,5 +129,4 @@ More reading : [How is the k-nearest neighbor algorithm different from k-means c
 K-Nearest Neighbors is a supervised classification algorithm, while k-means clustering is an unsupervised clustering algorithm. While the mechanisms may seem similar at first, what this really means is that in order for K-Nearest Neighbors to work, you need labeled data you want to classify an unlabeled point into (thus the nearest neighbor part). K-means clustering requires only a set of unlabeled points and a threshold: the algorithm will take unlabeled points and gradually learn how to cluster them into groups by computing the mean of the distance between different points.
 
 The critical difference here is that KNN needs labeled points and is thus supervised learning, while k-means doesn’t — and is thus unsupervised learning.
-
 
