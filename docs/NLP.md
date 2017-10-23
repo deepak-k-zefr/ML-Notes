@@ -11,11 +11,24 @@ The tf-idf value increases proportionally to the
 
 ![](https://wikimedia.org/api/rest_v1/media/math/render/svg/10109d0e60cc9d50a1ea2f189bac0ac29a030a00)
 
-Term frequency
+#### Term frequency
 The weight of a term that occurs in a document is simply proportional to the term frequency
+measures how frequently a term occurs in a document. Since every document is different in length, it is possible that a term would appear much more times in long documents than shorter ones. Thus, the term frequency is often divided by the document length (aka. the total number of terms in the document) as a way of normalization: 
 
-Inverse document frequency
+TF(t) = (Number of times term t appears in a document) / (Total number of terms in the document).
+
+
+#### Inverse document frequency
 The specificity of a term can be quantified as an inverse function of the number of documents in which the word occurs
+
+IDF: Inverse Document Frequency, which measures how important a term is. While computing TF, all terms are considered equally important. However it is known that certain terms, such as "is", "of", and "that", may appear a lot of times but have little importance. Thus we need to weigh down the frequent terms while scale up the rare ones, by computing the following: 
+
+IDF(t) = log_e(Total number of documents / Number of documents with term t in it).
+
+#### EXAMPLE
+Consider a document containing 100 words wherein the word cat appears 3 times. The term frequency (i.e., tf) for cat is then (3 / 100) = 0.03. Now, assume we have 10 million documents and the word cat appears in one thousand of these. Then, the inverse document frequency (i.e., idf) is calculated as log(10,000,000 / 1,000) = 4. Thus, the Tf-idf weight is the product of these quantities: 0.03 * 4 = 0.12.
+
+
 
 
 ## Naive Bayes spam filtering
