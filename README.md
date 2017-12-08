@@ -17,6 +17,7 @@ SOURCES:
 * [Probabilistic Graphical Models](./docs/Probabilistic_graphical_model.md)
 * [Good Answers from forums](./docs/Answers.md)
 * [Data Preprocessing](./docs/Preprocessing.md)
+* [Unsupervised Learning](./docs/Unsupervised-Learning.md)
 * [NLP](./docs/NLP.md)
 
 
