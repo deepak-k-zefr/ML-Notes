@@ -1,4 +1,7 @@
 ## K-means
+
+More Reading(https://stats.stackexchange.com/questions/133656/how-to-understand-the-drawbacks-of-k-means)
+
 k-means clustering aims to partition n observations into k clusters in which each observation belongs to the cluster with the nearest mean, serving as a prototype of the cluster
 
 
@@ -8,7 +11,15 @@ K-means clustering is a type of unsupervised learning, which is used when you ha
 
 Assumptions:
 1. k-means assumes the variance of the distribution of each attribute (variable) is spherical;
-2. all variables have the same variance;
+2. all variables have the same variance:
+
+
+
+![fig](https://i.stack.imgur.com/tXGTo.png)
+
+
+
+
 3. the prior probability for all k clusters is the same, i.e., each cluster has roughly equal number of observations;
 4. There are K clusters
 
@@ -17,3 +28,5 @@ k-means clustering is rather easy to implement and apply even on large data sets
 It often is used as a preprocessing step for other algorithms, for example to find a starting configuration.
 
 
+
+## GMM
