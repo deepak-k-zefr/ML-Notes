@@ -127,23 +127,8 @@ CREATE TABLE test(
 	type ENUM('T', 'Q') NOT NULL,
 	class_id INT UNSIGNED NOT NULL,
 	test_id INT UNSIGNED NOT NULL AUTO_INCREMENT PRIMARY KEY);
-
-```
-
-
-	a. class_id is a foreign key
-	
-	I. Used to make references to the Primary Key of another table 
-	
-	II. Example: If we have a customer and city table. If the city table had a column which listed the unique primary key of all the customers, that Primary Key listing in the city table would be considered a Foreign Key. 
-	
-	III. The Foreign Key can have a different name from the Primary Key name. 
-	
-	IV. The value of a Foreign Key can have the value of NULL. 
-	
-	V. A Foreign Key doesnt have to be unique
-	
 ```	
+```
  CREATE TABLE score(
 	student_id INT UNSIGNED NOT NULL,
 	event_id INT UNSIGNED NOT NULL,
@@ -154,7 +139,6 @@ CREATE TABLE absence(
 	student_id INT UNSIGNED NOT NULL,
 	date DATE NOT NULL,
 	PRIMARY KEY(student_id, date));
-	
 ```
 
 We combined the event and student id to make sure we don't have 
@@ -163,15 +147,32 @@ duplicate scores and it makes it easier to change scores
 Since neither the event or the student ids are unique on their 
 own we are able to make them unique by combining them.
 
-	
+```	
 CREATE TABLE absence(
 student_id INT UNSIGNED NOT NULL,
 date DATE NOT NULL,
 PRIMARY KEY(student_id, date));
+```
 
 Again we combine 2 items that aren't unique to generate a 
 unique key.
 
+**Add a max score column to test**
+	ALTER TABLE test ADD maxscore INT NOT NULL AFTER type; 
+	DESCRIBE test;
+	
+	
+**Insert Tests**
 
+	``` INSERT INTO test VALUES
+	('2014-8-25', 'Q', 15, 1, NULL),
+	('2014-8-27', 'Q', 15, 1, NULL),
+	('2014-8-29', 'T', 30, 1, NULL),
+	('2014-8-29', 'T', 30, 2, NULL),
+	('2014-8-27', 'Q', 15, 4, NULL),
+	('2014-8-29', 'T', 30, 4, NULL);
+	```
 
+	SELECT * FROM test;
 
+**Enter student scores**
