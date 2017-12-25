@@ -126,6 +126,12 @@ INSERT INTO class VALUES
 ('Art', NULL), ('Gym', NULL);
 ```
 
+**Create Tables test,score and absence**
+
+
+![SCHEMA](schema.png?raw=true)
+
+
 ```
 CREATE TABLE test(
 	date DATE NOT NULL,
@@ -139,12 +145,16 @@ CREATE TABLE test(
 	event_id INT UNSIGNED NOT NULL,
 	score INT NOT NULL,
 	PRIMARY KEY(event_id, student_id));
-	
+```
+
+```
 CREATE TABLE absence(
 	student_id INT UNSIGNED NOT NULL,
 	date DATE NOT NULL,
 	PRIMARY KEY(student_id, date));
 ```
+
+
 
 We combined the event and student id to make sure we don't have 
 duplicate scores and it makes it easier to change scores
@@ -156,11 +166,16 @@ own we are able to make them unique by combining them.
 Again we combine 2 items that aren't unique to generate a 
 unique key.
 
-**Add a max score column to test**
-
+**ADD a new column(max score column to test)**
 	ALTER TABLE test ADD maxscore INT NOT NULL AFTER type; 
 	DESCRIBE test;
-	
+
+**Change the name of a column(event_id in score to test_id)**
+
+	ALTER TABLE score CHANGE event_id test_id 
+	INT UNSIGNED NOT NULL;
+	DESCRIBE test;
+
 	
 **Insert Tests**
 
@@ -176,6 +191,9 @@ unique key.
 ```
 
 	SELECT * FROM test;
+
+
+
 
 **Enter student scores**
 
@@ -242,3 +260,275 @@ INSERT INTO score VALUES
 	(10, 5, 12),
 	(10, 6, 22);
 ```
+
+**Fill absences Table**
+
+```
+INSERT INTO absence VALUES
+	(6, '2014-08-29'),
+	(7, '2014-08-29'),
+	(8, '2014-08-27');
+```
+
+Now we are done filling all the data.
+
+**Select specific columns from a table**
+
+```
+SELECT FIRST_NAME, last_name 
+	FROM student;
+```
+
+**Rename Tables**
+
+```
+	RENAME TABLE 
+	absence to absences,
+	class to classes,
+	score to scores,
+	student to students,
+	test to tests;
+```
+
+### USE WHERE- 
+**Show every student born in the state of Washington**
+```
+	SELECT first_name, last_name, state 
+	FROM students
+	WHERE state="WA";
+```
+**Show every student born after 1965**
+
+```
+	SELECT *
+	FROM students
+	WHERE YEAR(birth_date) >= 1965;
+```
+	a. You can compare values with =, >, <, >=, <=, !=
+	
+	b. To get the month, day or year of a date use MONTH(), DAY(), or YEAR()
+
+**Show every student born in February or California**
+
+```
+. 	SELECT *
+	FROM students
+	WHERE MONTH(birth_date) = 2 OR state="CA";
+```
+
+	a. AND, && : Returns a true value if both conditions are true 
+
+	b. OR, || : Returns a true value if either condition is true 
+
+	c. NOT, ! : Returns a true value if the operand is false
+
+**Show every student born in February AND (California or Nevada)**
+```	
+	SELECT **
+	FROM students
+	WHERE DAY(birth_date) >= 12 && (state="CA" || state="NV");
+```
+
+**Return rows that have a specific(last_name) empty value **
+
+```	SELECT *
+	FROM students
+	WHERE last_name IS NULL;
+```
+
+**Sort results by a specific(last_name) column.**
+
+```
+	SELECT *
+	FROM students
+	ORDER BY last_name;
+
+ADD ASC or DESC to specify order
+```
+
+## LIMIT
+
+**Show first 5 results**
+
+```	SELECT *
+	FROM students
+	LIMIT 5;
+```
+**Show  5-10 results**
+
+```	SELECT *
+	FROM students
+	LIMIT 5, 10;
+```
+
+## CONCAT
+
+**Concat first name and last name **
+
+```	SELECT CONCAT(first_name, " ", last_name) AS 'Name',
+	CONCAT(city, ", ", state) AS 'Hometown'
+	FROM students;
+```
+	a. CONCAT is used to combine results
+	b. AS provides for a way to define the column name
+	
+
+**Match any first name that starts with a D, or ends with a n**
+
+``` 
+	SELECT last_name, first_name
+	FROM students
+	WHERE first_name LIKE 'D%' OR last_name LIKE '%n';
+```
+
+**MATCH _ _ _ Y last names **
+
+``` 
+	SELECT last_name, first_name
+	FROM students
+	WHERE first_name LIKE '___y';
+```
+**Show all the categories of a column(state)**
+
+```
+	SELECT DISTINCT state
+	FROM students
+	ORDER BY state;
+```
+
+**Show count of all the categories of a column(state)**
+```	
+	SELECT COUNT(DISTINCT state)
+	FROM students;
+```
+
+**Show count matching a condition **
+```
+	SELECT COUNT(*)
+	FROM students
+	WHERE sex='M';
+```
+
+**Group results based on a category(sex/birth year)**
+```
+ SELECT sex, COUNT(*)
+	FROM students
+	GROUP BY sex;
+```
+
+```SELECT MONTH(birth_date) AS 'Month', COUNT(*)
+	FROM students
+	GROUP BY Month
+	ORDER BY Month;
+```
+
+``` SELECT state, COUNT(state) AS 'Amount'
+	FROM students
+	GROUP BY state
+	HAVING Amount > 1;
+```
+	a. HAVING allows you to narrow the results after the query is executed
+
+
+**select based on a condition**
+	
+	SELECT student_id, test_id
+	FROM scores
+	WHERE student_id = 6;
+
+**Insert into table**
+	
+	INSERT INTO scores VALUES
+	(6, 3, 24);
+
+**Delete based on a condition**
+	
+	DELETE FROM absences 
+	WHERE student_id = 6;
+
+**ADD COLUMN**
+	
+	ALTER TABLE absences
+	ADD COLUMN test_taken CHAR(1) NOT NULL DEFAULT 'F'
+	AFTER student_id; 
+	
+	
+Use ALTER to add a column to a table. You can use AFTER
+or BEFORE to define the placement
+
+**Update a value based on a condition**
+
+	UPDATE scores SET score=25 
+	WHERE student_id=4 AND test_id=3;
+
+**Use BETWEEN to find matches between a minimum and maximum**
+
+	SELECT first_name, last_name, birth_date
+	FROM students
+	WHERE birth_date 
+	BETWEEN '1960-1-1' AND '1970-1-1';
+
+**Use IN to narrow results based on a predefined list of options**
+	
+	SELECT first_name, last_name
+	FROM students
+	WHERE first_name IN ('Bobby', 'Lucy', 'Andy');
+
+** JOIN- Get info from multiple sources:**
+
+
+	SELECT student_id, date, score, maxscore
+	FROM tests, scores
+	WHERE date = '2014-08-25'
+	AND tests.test_id = scores.test_id;
+	
+
+
+a. To combine data from multiple tables you can perform a JOIN
+by matching up common data like we did here with the test ids
+
+b. You have to define the 2 tables to join after FROM
+
+c. You have to define the common data between the tables after WHERE
+
+	SELECT scores.student_id, tests.date, scores.score, tests.maxscore
+	FROM tests, scores
+	WHERE date = '2014-08-25'
+	AND tests.test_id = scores.test_id;
+
+
+**JOIN + GROUPBY**
+	SELECT students.student_id, 
+	CONCAT(students.first_name, " ", students.last_name) AS Name,
+	COUNT(absences.date) AS Absences
+	FROM students, absences
+	WHERE students.student_id = absences.student_id
+	GROUP BY students.student_id;
+	
+	SELECT students.student_id, 
+	CONCAT(students.first_name, " ", students.last_name) AS Name,
+	COUNT(absences.date) AS Absences
+	FROM students LEFT JOIN absences
+	ON students.student_id = absences.student_id
+	GROUP BY students.student_id;
+
+If we need to include all information from the table listed
+first "FROM students", even if it doesn't exist in the table on
+the right "LEFT JOIN absences", we can use a LEFT JOIN.
+
+	SELECT students.first_name, 
+	students.last_name,
+	scores.test_id,
+	scores.score
+	FROM students
+	INNER JOIN scores
+	ON students.student_id=scores.student_id
+	WHERE scores.score <= 15
+	ORDER BY scores.test_id;
+
+a. An INNER JOIN gets all rows of data from both tables if there
+is a match between columns in both tables
+
+b. Here I'm getting all the data for all quizzes and matching that 
+data up based on student ids
+	
