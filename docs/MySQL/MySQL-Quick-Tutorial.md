@@ -55,9 +55,11 @@ student_id INT UNSIGNED NOT NULL AUTO_INCREMENT PRIMARY KEY
 
 
 **Show the table set up**
+
 	DESCRIBE student
 	
 **Inserting Data into a Table**
+
 ```
 INSERT INTO student VALUES('Harry', 'Truman', 'htruman@aol.com', 
 	'202 South St', 'Vancouver', 'WA', 98660, '792-223-9810', "1946-1-24",
@@ -102,12 +104,15 @@ INSERT INTO student VALUES('Harry', 'Truman', 'htruman@aol.com',
 		
 		
 **Create a Table for classes**
+
 	``` 
 	CREATE TABLE class(
 	name VARCHAR(30) NOT NULL,
 	class_id INT UNSIGNED NOT NULL AUTO_INCREMENT PRIMARY KEY);
 	```
+	
 **Show all Tables**
+
 	SHOW tables
 	
 **Insert all possible classes**
@@ -147,17 +152,12 @@ duplicate scores and it makes it easier to change scores
 Since neither the event or the student ids are unique on their 
 own we are able to make them unique by combining them.
 
-```	
-CREATE TABLE absence(
-student_id INT UNSIGNED NOT NULL,
-date DATE NOT NULL,
-PRIMARY KEY(student_id, date));
-```
 
 Again we combine 2 items that aren't unique to generate a 
 unique key.
 
 **Add a max score column to test**
+
 	ALTER TABLE test ADD maxscore INT NOT NULL AFTER type; 
 	DESCRIBE test;
 	
