@@ -8,7 +8,7 @@ CREDITS: Derek Banas-https://www.youtube.com/watch?v=yPu6qV5byu4
 ## MySQL Tutorial A-Z
 
 
-GOAL : Create the following tables and perform different operations.
+GOAL : Create the following tables(students,scores,test,absences,classes), fill them random data and perform different operations.
 
 	DESCRIBE students
 
@@ -69,6 +69,9 @@ GOAL : Create the following tables and perform different operations.
 | class_id | int(10) unsigned | NO   | PRI | NULL    | auto_increment |
 
 
+
+
+## START
 
 
  **Logging in to MySQL**
