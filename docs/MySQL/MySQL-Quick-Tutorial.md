@@ -9,9 +9,9 @@ CREDITS: Derek Banas-https://www.youtube.com/watch?v=yPu6qV5byu4
  	 mysql -u root -p
  
  **Quit**
-
-	 Quit MySQL
-   
+ 		
+		exit
+	
 **Display all databases**
    
     show databases;
@@ -354,7 +354,7 @@ ADD ASC or DESC to specify order
 	FROM students
 	LIMIT 5;
 ```
-**Show  5-10 results**
+**Show 5-10 results**
 
 ```	SELECT *
 	FROM students
