@@ -6,7 +6,7 @@ CREDITS: Derek Banas-https://www.youtube.com/watch?v=yPu6qV5byu4
 
  **Logging in to MySQL**
  
- 	 mysql5 -u mysqladmin -p
+ 	 mysql -u root -p
  
  **Quit**
 
