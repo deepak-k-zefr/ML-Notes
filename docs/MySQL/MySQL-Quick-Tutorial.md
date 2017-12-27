@@ -1,8 +1,75 @@
 
+
+
+	
 CREDITS: Derek Banas-https://www.youtube.com/watch?v=yPu6qV5byu4
 
 
 ## MySQL Tutorial A-Z
+
+
+GOAL : Create the following tables and perform different operations.
+
+	DESCRIBE students
+
+| Field        | Type                  | Null | Key | Default           | Extra                       |
+|--------------|:----------------------|:-----|:----|:-----------------|:-----------------------------|
+| first_name   | varchar(30)           | NO   |     | NULL              |                             |
+| last_name    | varchar(30)           | NO   |     | NULL              |                             |
+| email        | varchar(60)           | YES  |     | NULL              |                             |
+| street       | varchar(50)           | NO   |     | NULL              |                             |
+| city         | varchar(40)           | NO   |     | NULL              |                             |
+| state        | char(2)               | NO   |     | PA                |                             |
+| zip          | mediumint(8) unsigned | NO   |     | NULL              |                             |
+| phone        | varchar(20)           | NO   |     | NULL              |                             |
+| birth_date   | date                  | NO   |     | NULL              |                             |
+| sex          | enum('M','F')         | NO   |     | NULL              |                             |
+| date_entered | timestamp             | NO   |     | CURRENT_TIMESTAMP | on update CURRENT_TIMESTAMP |
+| lunch_cost   | float                 | YES  |     | NULL              |                             |
+| student_id   | int(10) unsigned      | NO   | PRI | NULL              | auto_increment              |
+
+	
+	DESCRIBE scores;
+
+| Field      | Type             | Null | Key | Default | Extra |
+|:-----------|:-----------------|:-----|:----|:--------|:------|
+| student_id | int(10) unsigned | NO   | PRI | NULL    |       |
+| test_id    | int(10) unsigned | NO   | PRI | NULL    |       |
+| score      | int(11)          | NO   |     | NULL    |       |
+
+
+
+	 DESCRIBE test;
+
+| Field    | Type             | Null | Key | Default | Extra          |
+|:---------|:-----------------|:-----|:----|:--------|:---------------|
+| date     | date             | NO   |     | NULL    |                |
+| type     | enum('T','Q')    | NO   |     | NULL    |                |
+| maxscore | int(11)          | NO   |     | NULL    |                |
+| class_id | int(10) unsigned | NO   |     | NULL    |                |
+| test_id  | int(10) unsigned | NO   | PRI | NULL    | auto_increment |
+
+
+
+	DESCRIBE absences;
+
+| Field      | Type             | Null | Key | Default | Extra |
+|:-----------|:-----------------|:-----|:----|:--------|:------|
+| student_id | int(10) unsigned | NO   | PRI | NULL    |       |
+| test_taken | char(1)          | NO   |     | F       |       |
+| date       | date             | NO   | PRI | NULL    |       |
+
+
+
+ 	DESCRIBE classes;
+
+| Field    | Type             | Null | Key | Default | Extra          |
+|:---------|:-----------------|:-----|:----|:--------|:---------------|
+| name     | varchar(30)      | NO   |     | NULL    |                |
+| class_id | int(10) unsigned | NO   | PRI | NULL    | auto_increment |
+
+
+
 
  **Logging in to MySQL**
  
@@ -272,6 +339,9 @@ INSERT INTO absence VALUES
 
 Now we are done filling all the data.
 
+
+
+
 **Select specific columns from a table**
 
 ```
@@ -289,6 +359,7 @@ SELECT FIRST_NAME, last_name
 	student to students,
 	test to tests;
 ```
+
 
 ### USE WHERE- 
 **Show every student born in the state of Washington**
