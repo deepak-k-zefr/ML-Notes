@@ -329,7 +329,7 @@ SELECT FIRST_NAME, last_name
 	WHERE DAY(birth_date) >= 12 && (state="CA" || state="NV");
 ```
 
-**Return rows that have a specific(last_name) empty value **
+**Return rows that have a specific(last_name) empty value**
 
 ```	SELECT *
 	FROM students
@@ -363,7 +363,7 @@ ADD ASC or DESC to specify order
 
 ## CONCAT
 
-**Concat first name and last name **
+**Concat first name and last name**
 
 ```	SELECT CONCAT(first_name, " ", last_name) AS 'Name',
 	CONCAT(city, ", ", state) AS 'Hometown'
@@ -381,7 +381,7 @@ ADD ASC or DESC to specify order
 	WHERE first_name LIKE 'D%' OR last_name LIKE '%n';
 ```
 
-**MATCH _ _ _ Y last names **
+**MATCH _ _ _ Y last names**
 
 ``` 
 	SELECT last_name, first_name
@@ -402,7 +402,7 @@ ADD ASC or DESC to specify order
 	FROM students;
 ```
 
-**Show count matching a condition **
+**Show count matching a condition**
 ```
 	SELECT COUNT(*)
 	FROM students
@@ -430,7 +430,7 @@ ADD ASC or DESC to specify order
 	a. HAVING allows you to narrow the results after the query is executed
 
 
-**select based on a condition**
+**Select based on a condition**
 	
 	SELECT student_id, test_id
 	FROM scores
@@ -474,7 +474,7 @@ or BEFORE to define the placement
 	FROM students
 	WHERE first_name IN ('Bobby', 'Lucy', 'Andy');
 
-** JOIN- Get info from multiple sources:**
+**JOIN- Get info from multiple sources:**
 
 
 	SELECT student_id, date, score, maxscore
@@ -498,6 +498,7 @@ c. You have to define the common data between the tables after WHERE
 
 
 **JOIN + GROUPBY**
+
 	SELECT students.student_id, 
 	CONCAT(students.first_name, " ", students.last_name) AS Name,
 	COUNT(absences.date) AS Absences
