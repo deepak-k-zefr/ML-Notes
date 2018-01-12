@@ -80,6 +80,11 @@ GLM is a flexible generalization of ordinary linear regression that allows for r
 There is no  assumption on data, errors or targets. In theory a Neural Network can approximate any function and this is done without assumptions, it only depends on data and network configuration.
 
 
+
+
+
+
+
 ## Ensemble methods
 
 The goal of ensemble methods is to combine the predictions of several base estimators built with a given learning algorithm in order to improve generalizability / robustness over a single estimator.
@@ -125,6 +130,13 @@ The above procedure describes the original bagging algorithm for trees. Random f
 Typically, for a classification problem with p features, √p (rounded down) features are used in each split. For regression problems the inventors recommend p/3 (rounded down) with a minimum node size of 5 as the default.
 
 ![](https://databricks.com/wp-content/uploads/2015/01/Ensemble-example.png)
+
+
+
+
+Should inputs to random forests be normalized?
+
+Any algorithm based on recursive partitioning, such as decision trees, and regression trees does not require inputs (features) to be normalized, since it is invariant to monotonic transformations of the features (just think about how the splits are done at each node). Since random forests (as well as gbm) are just a collection of trees, there is no need to normalize.
 
 
 ## KNN vs k-means clustering
